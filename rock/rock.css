@@ -1,0 +1,101 @@
+/* Reset styles and global settings */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.game-container {
+    text-align: center;
+    background-color: #ffffff; /* White background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50; /* Green */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.start-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.game-button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2196F3; /* Blue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.game-button:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
+.scoreboard {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.scoreboard h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.scoreboard div {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.result {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Animation for game buttons */
+@keyframes shake {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.game-button.shake {
+    animation: shake 0.5s;
+}
